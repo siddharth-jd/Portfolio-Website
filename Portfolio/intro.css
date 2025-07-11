@@ -1,0 +1,26 @@
+.intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.big {
+    font-size: 36px;
+}
+
+.fancy-heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0px;
+    display: inline-block;
+}
+
