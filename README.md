@@ -11,4 +11,4 @@ The site is responsive, interactive, and deployed via GitHub Pages.
 **CSS Animations** – Transitions and hover effects enhance user experience.
 
 
-You can check the folder named Portfolio for the code.
+Above are the files related.
