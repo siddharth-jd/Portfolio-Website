@@ -7,7 +7,6 @@ The site is responsive, interactive, and deployed via GitHub Pages.
 **Resume Download** – Link to view or download the resume in PDF format.
 **Responsive Design** – Mobile-friendly layout using media queries.
 **Responsive Navigation Bar** – Collapsible nav menu on smaller screens.
-**Project Filtering** – Filter projects by category (e.g., Portfolio, ML).
 **Smooth Scrolling** – Navigates sections with smooth animation.
 **CSS Animations** – Transitions and hover effects enhance user experience.
 
