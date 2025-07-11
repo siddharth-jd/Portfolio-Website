@@ -10,3 +10,5 @@ The site is responsive, interactive, and deployed via GitHub Pages.
 **Smooth Scrolling** – Navigates sections with smooth animation.
 **CSS Animations** – Transitions and hover effects enhance user experience.
 
+
+You can check the folder named Portfolio for the code.
