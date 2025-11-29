@@ -1,172 +1,122 @@
-# Portfolio-Website
-This is my personal portfolio website built to showcase my projects, skills, resume, and experience in AI, Machine Learning, Deep Learning, Reinforcement Learning, NLP, and Front-End Web Development.
-The site is fully responsive, visually clean, and optimized for clarity and smooth interaction.
+#  **Portfolio Website**
 
-🚀 Features
-✅ Home / Introduction
+This is my personal portfolio website built to showcase my projects, skills, and experience in **AI, Machine Learning, Deep Learning, Reinforcement Learning, NLP, and Front-End Web Development**. The site is fully responsive, cleanly designed, and optimized for clarity and smooth interaction.
 
-Professional intro with background, interests, and career focus
+---
 
-Clean hero section with name, title, and description
+##  Features
 
-✅ Technical Skills Section
+### ** Home / Introduction**
 
-Displays core skills across AI, ML, DL, CV, NLP, and Front-End Development
+* Professional intro with background, interests, and focus
+* Highlights AI + ML + Web Development roles
 
-Modern pill-style UI for each skill tag
+### ** Technical Skills**
 
-Covers languages, frameworks, and technologies used across real projects
+* Modern pill-styled skill tags
+* Includes AI, ML, DL, CV, NLP, and Front-End technologies used across real projects
+* Responsive layout
 
-✅ Projects Showcase
+### ** Projects Showcase**
 
-Each project appears as a responsive card with an image & summary
+Each showcased project includes:
 
-Clicking a project opens a dedicated details page describing:
+* A project card with image + summary
+* A dedicated detail page covering:
 
-Overview
+  * Overview
+  * Key features
+  * Workflow / Architecture
+  * Tech stack
 
-Features
+**Projects included:**
 
-Architecture / Pipeline
+* Reinforcement Learning (CarRacing CNN Actor–Critic)
+* GPT-2 Next Word Prediction
+* MNIST CNN Classifier
+* Heart Disease Modeling (ML Pipeline)
+* AI Room Guard (Voice + Face Recognition + LLM)
+* Contacts List Web App (React + Tailwind + Framer Motion)
+* Face Verification (Siamese Network)
+* Gesture Recognition (Mediapipe + OpenCV)
+* Portfolio Website
 
-Tech stack used
+### ** Resume Section**
 
-Projects include:
+* Downloadable resume button
+* Role tags: AI Developer, Machine Learning Engineer, Front-End Developer
 
-Reinforcement Learning (CarRacing CNN Actor-Critic)
+### ** Responsive Navbar**
 
-GPT-2 Next Word Predictor
+* Underline hover animation
+* Mobile-friendly menu toggle
 
-MNIST CNN Classifier
+### ** Fully Responsive**
 
-Heart Disease Modeling
+* Smooth readability across desktop, tablet, and phone
+* Optimized margins, spacing, and layout
 
-AI Room Guard (Face Recognition + Voice + LLM)
+---
 
-Contacts List (React + Tailwind + Framer Motion)
+##  Tech Stack
 
-Face Verification (Siamese Network)
+### **Frontend**
 
-Gesture Recognition Project
+* HTML5
+* CSS3
+* JavaScript
 
-Portfolio Website itself
+### **Styling**
 
-✅ Resume Section
+* Custom CSS structure (component-wise files)
+* Smooth transitions & hover animations
 
-Dedicated button to download/view resume
+### **Assets**
 
-Highlighted role tags (AI Developer, Machine Learning Engineer, Front-End Developer)
+* Custom images for each project
+* Resume (PDF)
+---
 
-✅ Responsive Navbar
+##  Setup & Usage
 
-Underline hover animation
+Run locally:
 
-Mobile-friendly toggle menu
-
-Smooth scrolling between sections
-
-✅ Fully Responsive Design
-
-Looks great on desktops, tablets, and phones
-
-Optimized margins, spacing, and content width
-
-🛠️ Tech Stack
-Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Responsive layouts with Flexbox / Grid
-
-Custom animations & transitions
-
-Styling
-
-Custom CSS (no frameworks)
-
-Component-wise CSS files
-
-Smooth hover and underline animations
-
-Media & Assets
-
-Custom project images
-
-JPG/PNG images for ML, DL, and RL projects
-
-📁 Project Structure
-/
-📄 index.html                → Main portfolio page
-📄 project-*.html            → Individual project detail pages
-
-CSS/
-│── animations.css
-│── body.css
-│── heading.css
-│── intro.css
-│── profile.css
-│── project_boxes.css
-│── resume_button.css
-│── skills.css
-│── (others...)
-
-JS/
-│── main.js                 → Navbar toggle + interactions
-
-Assets/
-│── images for each project
-│── resume.pdf
-
-📦 Setup & Usage
-
-You can run this website locally:
-
+```bash
 # Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/<your-username>/<your-repo>.git
 
-# Open in a browser
-open index.html 
+# Open the site
+open index.html
 # or just double-click index.html
+```
 
+No installations or frameworks needed — it's a static website.
 
-No build tools or installations needed — it is a purely static website.
+---
 
-🌐 Deployment
+## Deployment Options
 
-You can deploy it easily using:
+### **GitHub Pages**
 
-GitHub Pages
+1. Push the repo to GitHub
+2. Go to: **Settings → Pages**
+3. Select **Branch: main → /root**
+4. Save → Your site is live
 
-Push the repo to GitHub
+### **Vercel / Netlify**
 
-Go to Settings → Pages
+* Drag and drop the folder
+* Instant deployment
+* Free HTTPS + fast CDN
 
-Select main branch → /root
+---
 
-Save and your website will be live
+##  Future Enhancements (Optional)
 
-Vercel or Netlify
+* Dark / Light mode
+* Category-based project filtering
+* Additional animations (GSAP / Framer Motion)
+* Contact form with backend integration
+* React version of the portfolio
 
-Drag and drop the folder
-
-Deploy instantly
-
-Provides HTTPS, custom domain, and fast global CDN
-
-💡 Future Improvements (Optional)
-
-Potential enhancements:
-
-Dark/Light mode
-
-Project filtering (AI / ML / Web)
-
-Smooth animations using GSAP or Framer Motion
-
-React version of the same portfolio
-
-Backend-based contact form
+---
