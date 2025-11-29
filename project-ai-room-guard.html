@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Room Guard Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>AI Room Guard Project</h1>
+        <p class="project-subtitle">
+            A multi-modal AI security agent that combines voice activation, face verification and LLM-based interaction.
+        </p>
+
+        <img src="AI Room Guard Project.png" alt="AI room guard robot" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project implements an AI “room guard” that can listen for a wake word, recognize who 
+                is in front of the camera, and then respond using a conversational LLM. The system works as 
+                an intelligent security assistant that can distinguish trusted users from unknown people and 
+                react accordingly.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    Developed a multi-modal guard agent in Python by integrating voice activation 
+                    using <b>SpeechRecognition</b>, high-accuracy face recognition with <b>DeepFace</b>, 
+                    and a conversational LLM via the <b>Groq API</b>.
+                </li>
+                <li>
+                    Engineered a robust face verification module by fine-tuning the <b>VGG-Face</b> model and
+                    using a custom cosine similarity threshold to clearly separate trusted users from unknown faces.
+                </li>
+                <li>
+                    Implemented an autonomous monitoring loop that listens for a voice trigger, 
+                    captures webcam frames, and decides whether to issue a verbal warning or a 
+                    friendly greeting.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>How It Works</h2>
+            <ul>
+                <li>The system stays idle until a wake word is detected through the microphone.</li>
+                <li>On activation, the webcam captures a face image and passes it through the VGG-Face model.</li>
+                <li>The embedding is compared against stored trusted embeddings using cosine similarity.</li>
+                <li>If the user is unknown, the system triggers a security warning; if trusted, it greets 
+                    the user and can answer questions via the LLM.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Python</li>
+                <li>DeepFace, VGG-Face</li>
+                <li>SpeechRecognition for voice input</li>
+                <li>Groq API (LLM)</li>
+                <li>OpenCV for webcam capture</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

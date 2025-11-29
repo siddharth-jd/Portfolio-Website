@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacts List Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>Contacts List – React Single Page App</h1>
+        <p class="project-subtitle">
+            A responsive contacts manager built with React, Tailwind CSS and Framer Motion.
+        </p>
+
+        <img src="Contacts List.png" alt="Contacts list React UI" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project is a single-page contact management application built from scratch with React.
+                It focuses on creating a smooth, modern user experience with animations, theming and real-time
+                search while keeping all data in the browser using local storage.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    Built a fully responsive contacts UI using <b>React</b> and <b>Tailwind CSS</b>, with smooth
+                    transitions and micro-interactions powered by <b>Framer Motion</b>.
+                </li>
+                <li>
+                    Implemented all core contact features: add, edit, delete contacts, mark favorites, and 
+                    group contacts alphabetically.
+                </li>
+                <li>
+                    Added live search, favorites filtering and dark/light mode using React state.
+                </li>
+                <li>
+                    Persisted all user data, including contacts, profile photos and settings, in 
+                    <b>localStorage</b> so the app works across page reloads without a backend.
+                </li>
+                <li>
+                    Deployed the app using <b>Vercel</b> and maintained the codebase on <b>GitHub</b>.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>How It Works</h2>
+            <ul>
+                <li>Contacts are stored in a React state array and mirrored to local storage on every change.</li>
+                <li>Forms handle creating and editing contacts, including optional avatar/image uploads.</li>
+                <li>Search input and filters derive a computed list which is rendered and grouped by alphabet.</li>
+                <li>A theme toggle switches between dark and light Tailwind classes globally.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Framer Motion</li>
+                <li>localStorage (no backend)</li>
+                <li>Vercel for deployment, GitHub for version control</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

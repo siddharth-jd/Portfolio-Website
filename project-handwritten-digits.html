@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Written Digit Classifier – CNN on MNIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>Hand Written Digit Classifier</h1>
+        <p class="project-subtitle">
+            Convolutional Neural Network in PyTorch to classify MNIST digits with high accuracy.
+        </p>
+
+        <img src="Hand Written Digit Classifier.png" alt="Handwritten digit classifier" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project builds a convolutional neural network (CNN) in PyTorch to classify handwritten
+                digits from the MNIST dataset. The focus is on designing an efficient architecture, using
+                augmentation to improve generalization, and analyzing performance with standard metrics.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Designed a multi-layer CNN trained for around 10 epochs using GPU acceleration.</li>
+                <li>Applied data augmentation (rotation, translation, normalization) to improve robustness.</li>
+                <li>Achieved strong classification accuracy on the MNIST test set.</li>
+                <li>Generated classification reports and confusion matrices for detailed error analysis.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Training Pipeline</h2>
+            <ul>
+                <li>Loaded MNIST images and labels using PyTorch <code>DataLoader</code>s.</li>
+                <li>Applied transforms for normalization and augmentation.</li>
+                <li>Trained the CNN using cross-entropy loss and an optimizer like Adam/SGD.</li>
+                <li>Evaluated performance on a held-out test set and visualized predictions.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>Matplotlib / Seaborn for visualization</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

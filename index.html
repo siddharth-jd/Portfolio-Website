@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project_boxes.css">
+        <link rel="stylesheet" href="heading.css">
+        <link rel="stylesheet" href="intro.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="body.css">
+        <link rel="stylesheet" href="Technical_Skills.css">
+        <link rel="stylesheet" href="skills.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="resume_button.css">
+    </head>
+    <body class="page">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#">My Portfolio</a>
+            </div>
+            <button id="nav-toggle">&#9776;</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <p class="heading">
+                PORTFOLIO
+            </p>
+        </div>
+
+        <div class="profile_div">
+            <img class="profile" src="Portfolio_2.jpg" alt="Banner image">
+        </div>
+
+        <div class="intro">
+            <div class="name">
+                <h1 class="fancy-heading"><span class="big">S</span>IDDHARTH</h1>
+                <h1 class="fancy-heading"><span class="big">J</span>EEDULA</h1>
+            </div>
+            
+            <h3>Software Developer</h3>
+            <p style="font-size: 18px; width: 1150px; margin-top: 10px;">
+                I am Siddharth Jeedula, a B.Tech student at IIT Bombay with a deep interest in Artificial Intelligence and modern software development. My work spans reinforcement learning, NLP, computer vision, and front-end engineering. I have developed RL agents using Q-Learning, DQN, PPO, and CNN Actor Critic models; built GPT-2 based next-word predictors; implemented one-shot face verification systems; and engineered gesture-controlled interfaces using Mediapipe, OpenCV, and PyTorch/TensorFlow. Alongside ML, I build refined, production-ready web apps using React, Tailwind CSS, and Framer Motion, including a full-featured contacts manager and this portfolio website. I also was as a mentor at Abhudhay and in SOC, and co-ordinator at E-Cell IIT Bombay, helping students learn development, design better workflows, and build complete projects and to ensure a workflow of events at E-Cell.
+            </p>
+            <a class="resume_button" href="Resume_External.pdf" target="blank">Resume</a>
+            <p style="font-size: 18px;">
+                <a href="https://github.com/siddharth-jd" target="blank">GitHub</a>
+            </p>
+        </div>
+
+        <div class="container_box" id="projects">
+            <!-- Reinforcement Learning – Car Racing -->
+            <div class="box rl-car-racing">
+                <div>
+                    <h2 style="text-align: center;">Reinforcement Learning – Car Racing</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="RL.png" alt="CarRacing RL agent">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Built a convolutional actor–critic policy in PyTorch for the CarRacing-v3 environment
+                        from Gymnasium, using stacked grayscale frames as input and generating smooth driving
+                        videos of the agent rolling out in the environment.
+                    </p>
+                    <a href="project-reinforcement-learning.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+
+            <!-- Next Word Predictor using Transformers -->
+            <div class="box gpt2-nextword">
+                <div>
+                    <h2 style="text-align: center;">Next Word Predictor – GPT-2</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="Next Word Predictor using Transformers.png" alt="GPT-2 next word prediction">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Built and fine-tuned a GPT-2 transformer model on the WikiText-2 dataset to predict the 
+                        next word in a sequence, evaluating performance using perplexity and top-k accuracy.
+                    </p>
+                    <a href="project-next-word-predictor.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+
+            <div class="box face-recognition">
+                <div>
+                    <h2 style="text-align: center;">Face Recognition</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="Face_cipher.png" alt="Face recognition project">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;"> 
+                        Developed a Siamese neural network in TensorFlow for one-shot face verification, leveraging contrastive loss and training
+                        on structured triplets of anchor, positive, and negative images to learn facial similarity.
+                    </p>
+                    <a href="project-face-recognition.html" class="project-more">View project →</a>
+                </div>
+            </div>
+            
+            <!-- AI Room Guard Project -->
+            <div class="box ai-room-guard">
+                <div>
+                    <h2 style="text-align: center;">AI Room Guard Project</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="AI Room Guard Agent.png" alt="AI Room Guard robot">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Developed a multi-modal AI room guard that combines voice activation, face recognition 
+                        and a conversational LLM to monitor a room, verify trusted users and respond with 
+                        warnings or greetings in real time.
+                    </p>
+                    <a href="project-ai-room-guard.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            <!-- Contacts List Web App -->
+            <div class="box contacts-list">
+                <div>
+                    <h2 style="text-align: center;">Contacts List Web App</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="Contacts.png" alt="Contacts list React app">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Built a modern single-page contacts manager in React with Tailwind and Framer Motion, 
+                        supporting live search, favorites, dark/light mode and full CRUD actions stored in local storage.
+                    </p>
+                    <a href="project-contacts-list.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            <div class="box gesture-recognition">
+                <div>
+                    <h2 style="text-align: center;">Gesture Based Number Recognition</h2>
+                </div>
+                <div>
+                    <img class="project_img_3" src="102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" alt="Gesture recognition project">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;"> 
+                        Implemented real-time gesture-based system controls by integrating Pycaw for volume adjustment and WMI for brightness control,
+                        enabling seamless, touchless interaction on Windows using hand tracking.
+                    </p>
+                    <a href="project-gesture.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            <!-- Hand Written Digit Classifier -->
+            <div class="box mnist-cnn">
+                <div>
+                    <h2 style="text-align: center;">Hand Written Digit Classifier</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="Hand Written Digit Classifier.png" alt="MNIST handwritten digit classifier">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Developed a CNN in PyTorch to classify MNIST handwritten digits with strong accuracy, 
+                        using data augmentation and evaluation metrics like confusion matrices and classification reports.
+                    </p>
+                    <a href="project-handwritten-digits.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            <!-- Heart Disease Modeling Project -->
+            <div class="box heart-disease">
+                <div>
+                    <h2 style="text-align: center;">Heart Disease Modeling</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="Heart Disease Modelling.png" alt="Heart disease modeling project">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;">
+                        Modeled heart disease risk using Logistic Regression, Random Forests, PCA for dimensionality 
+                        reduction, and K-Means clustering to segment patients based on clinical profiles.
+                    </p>
+                    <a href="project-heart-disease.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            <div class="box portfolio">
+                <div>
+                    <h2 style="text-align: center;">Portfolio</h2>
+                </div>
+                <div>
+                    <img class="project_img" src="SOC_banner.png" alt="Portfolio project banner">
+                </div>
+                <div>
+                    <p style="text-align: center; margin: 5px; margin-bottom: 10px;"> 
+                        Designed and developed a personal portfolio website to showcase projects, resume, and contact information.
+                        Used JavaScript-based interactivity for smooth scrolling and a responsive navigation bar.
+                    </p>
+                    <a href="project-portfolio.html" class="project-more">View project →</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div style="font-size: larger; text-align: center; margin-top: 40px;">&#9959 &#9959 &#9959 &#9959 &#9959 &#9959 &#9959</div>
+
+        <div class="Technical_Skills" id="skills">
+            <div>
+                <h1 style="margin-top: 20px; text-align: center;">Technical Skills</h1>
+            </div>
+            <div style="text-align: center;">
+                <div class="skills">C++</div>
+                <div class="skills">Python</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">Numpy</div>
+                <div class="skills">Pandas</div>
+                <div class="skills">Pytorch</div>
+                <div class="skills">TensorFlow</div>
+                <div class="skills">Keras</div>
+                <div class="skills">OpenCV</div>
+                <div class="skills">Mediapipe</div>
+                <div class="skills">HTML</div>
+                <div class="skills">CSS</div>
+                <div class="skills">Tailwind CSS</div>
+                <div class="skills">React</div>
+                <div class="skills">Framer Motion</div>
+                <div class="skills">Git</div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-start;">
+                <p style="display: flex; ">
+                    <span style="font-size: x-large;">&#8611;</span>
+                    <span style="font-size: x-large; padding-left: 5px;">AI Engineer</span>
+                </p>
+                <p style="display: flex; ">
+                    <span style="display: inline-block; font-size: x-large;">&#8611;</span>
+                    <span style="font-size: x-large; padding-left: 5px;">Machine Learning Engineer</span>
+                </p>
+                <p style="display: flex; ">
+                    <span style="display: inline-block; font-size: x-large;">&#8611;</span>
+                    <span style="font-size: x-large; padding-left: 5px;">Front-End Web Developer</span>
+                </p>
+                
+            </div>
+            <div style="margin-top: 20px; font-size: larger;">&#9959 &#9959 &#9959 &#9959 &#9959 &#9959 &#9959</div>
+        </div>
+
+        <div id="education">
+            <h1 style="text-align: center; margin-top: 40px;">Education</h1>
+            <div>
+                <p style="font-size: x-large; text-align: center; margin: 0px;">IIT Bombay, Mumbai, India</p>
+                <p style="font-size: 20px; text-align: center; color: rgb(141, 137, 137); margin-top: 5px;">Bachelor of Technology</p>
+                <p style="font-size: 20px; text-align: center; margin-top: 5px;">
+                    Visit <a href="https://www.iitb.ac.in/" target="_blank">IIT Bombay</a>
+                </p>
+            </div>
+            <div style="font-size: larger; text-align: center; margin-top: 30px;">&#9959 &#9959 &#9959 &#9959 &#9959 &#9959 &#9959</div>
+        </div>
+
+        <div id="contact">
+            <h1 style="text-align: center; margin-top: 40px;">Contact</h1>
+            <div>
+                <p style="font-size: x-large; text-align: center; margin: 0px;">
+                    E-mail: <span style="color: rgb(48, 49, 128);">siddharthjeedula07@gmail.com</span>
+                </p>
+                <p style="font-size: x-large; text-align: center; margin: 20px;">
+                    Linkedin:
+                    <a href="https://www.linkedin.com/in/siddharth-jeedula-90749a28a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByzSl2LLyQhikTNLc4A52uA%3D%3D"
+                       target="_blank">
+                       Siddharth Jeedula
+                    </a>
+                </p>
+                <div style="font-size: larger; text-align: center; margin-top: 30px; margin-bottom: 40px;">
+                    &#9959 &#9959 &#9959 &#9959 &#9959 &#9959 &#9959
+                </div>
+            </div>
+        </div>
+
+        <div class="profile_div">
+            <img class="profile_1" src="Portfolio.jpg" alt="Second banner">
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

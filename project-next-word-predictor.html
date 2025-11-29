@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Word Predictor – GPT-2 Transformers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>Next Word Predictor using Transformers</h1>
+        <p class="project-subtitle">
+            Fine-tuning GPT-2 with Hugging Face on WikiText-2 for next-word prediction.
+        </p>
+
+        <img src="Next Word Predictor using Transformers.png" alt="GPT-2 next word prediction" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project fine-tunes a GPT-2 transformer model on the WikiText-2 dataset to predict the next
+                word in a sentence. The goal is to adapt a pre-trained language model to structured text and
+                evaluate how well it can continue natural language prompts.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Used Hugging Face Transformers to load and fine-tune GPT-2.</li>
+                <li>Tokenized WikiText-2 using <code>AutoTokenizer</code> with appropriate padding and truncation.</li>
+                <li>Configured the <code>Trainer</code> API for language modeling with causal loss.</li>
+                <li>Evaluated the model using perplexity and top-k word accuracy.</li>
+                <li>Built helper functions to generate next-word predictions and short text continuations.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Training & Pipeline</h2>
+            <ul>
+                <li>Loaded the WikiText-2 dataset and preprocessed it into tokenized sequences.</li>
+                <li>Fine-tuned GPT-2 with a fixed sequence length and batch size.</li>
+                <li>Tracked loss and evaluation metrics across epochs.</li>
+                <li>Used the trained model to predict the most likely next words for custom prompts.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Python</li>
+                <li>Hugging Face Transformers</li>
+                <li>PyTorch backend</li>
+                <li>Datasets: WikiText-2</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

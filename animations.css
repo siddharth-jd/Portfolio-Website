@@ -1,0 +1,66 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeUpIn{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* @keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.heading {
+    animation: fadeUpIn 1.5s ease-out;
+}
+
+
+
+.intro {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.box {
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1.5s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.skills:hover {
+    background-color: #6bcfe3;
+    cursor: pointer;
+    animation: pulse 1.5s infinite ease-in-out;
+    transition: background-color 0.3s;
+}

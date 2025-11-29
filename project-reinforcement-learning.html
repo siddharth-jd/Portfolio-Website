@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reinforcement Learning – Car Racing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>Reinforcement Learning – Car Racing</h1>
+        <p class="project-subtitle">
+            CNN-based actor–critic policy controlling a car in the CarRacing-v3 environment using stacked frames.
+        </p>
+
+        <img src="RL.png" alt="CarRacing RL agent" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project uses reinforcement learning ideas to control a car in the
+                <b>CarRacing-v3</b> environment from Gymnasium. I built a convolutional
+                actor–critic policy network in PyTorch that takes a stack of recent frames
+                as input and outputs discrete driving actions. The rollout is recorded and
+                exported as an MP4 video for easy visualisation.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    Wrapped the CarRacing-v3 environment with a custom
+                    <code>FrameStackWrapper</code> that converts RGB frames to grayscale,
+                    resizes them to <b>96×96</b> and stacks the last <b>4</b> frames to give
+                    the network short-term temporal context.
+                </li>
+                <li>
+                    Implemented a <b>CNNPolicy</b> actor–critic model with three convolutional
+                    layers followed by fully connected layers that output:
+                    a policy head (action logits for 5 discrete actions) and a value head.
+                </li>
+                <li>
+                    Used a <code>Categorical</code> distribution over the policy logits to
+                    sample actions, similar to what is used in PPO/actor–critic methods.
+                </li>
+                <li>
+                    Mapped each discrete action to a continuous control vector
+                    <code>[steer, gas, brake]</code> to drive the car in the environment.
+                </li>
+                <li>
+                    Captured rendered frames during the rollout and used <b>imageio</b>
+                    to save a smooth <b>MP4</b> video, which is displayed inline using
+                    HTML in a notebook.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>How It Works (Code Flow)</h2>
+            <ul>
+                <li>Create the environment with <code>gym.make("CarRacing-v3", render_mode="rgb_array")</code>
+                    and wrap it with <code>FrameStackWrapper(k=4)</code>.</li>
+                <li>Reset the environment, process the first observation and send it to the GPU
+                    as a <code>(1, 4, 96, 96)</code> tensor.</li>
+                <li>The <code>CNNPolicy.act()</code> method normalizes the input, runs it through
+                    the convolutional stack, and returns a sampled action plus value estimates.</li>
+                <li>The discrete action (0–4) is mapped to steering/gas/brake values, which are
+                    passed back to <code>env.step()</code>.</li>
+                <li>After each step, the new stacked frames are fed again to the policy until
+                    the episode terminates or a max step limit is reached.</li>
+                <li>All raw RGB frames are stored and finally written to an MP4 using
+                    <code>imageio.mimsave()</code>, then played with an HTML video tag.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Python</li>
+                <li>PyTorch (CNN actor–critic policy)</li>
+                <li>Gymnasium – CarRacing-v3 environment</li>
+                <li>OpenCV for frame preprocessing (grayscale + resize)</li>
+                <li>NumPy, <code>deque</code> for frame stacking</li>
+                <li>imageio and IPython HTML display for video export</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

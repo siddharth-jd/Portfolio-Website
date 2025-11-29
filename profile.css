@@ -1,0 +1,21 @@
+.profile{
+    width: 1400px;
+    height: 390px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.4);
+}
+.profile_1{
+    width: 1400px;
+    height: 390px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.4);
+}
+
+.profile_div{
+    display: flex;
+    justify-content: center;
+}

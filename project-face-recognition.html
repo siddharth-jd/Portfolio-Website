@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition – Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="project_page.css">
+</head>
+<body class="page">
+    <div class="project-page">
+        <a href="index.html#projects" class="back-link">← Back to all projects</a>
+
+        <h1>Face Recognition – One-shot Face Verification</h1>
+        <p class="project-subtitle">
+            Siamese neural network built with TensorFlow for one-shot face verification using triplet-based training.
+        </p>
+
+        <img src="Face_cipher.png" alt="Face recognition project" class="project-cover">
+
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                This project implements a Siamese neural network that verifies whether two face images belong to
+                the same person. The model is trained using contrastive / triplet-style supervision with
+                anchor, positive, and negative examples to learn a robust embedding space for faces.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2>What the Model Does</h2>
+            <ul>
+                <li>Encodes faces into fixed-size embeddings using a convolutional neural network.</li>
+                <li>Computes distance between two embeddings to measure similarity.</li>
+                <li>Outputs a verification decision: same person or different person.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Uses TensorFlow and Keras to build the Siamese architecture.</li>
+                <li>Custom distance layer to compute L1 distance between embeddings.</li>
+                <li>Training on structured triplets (anchor, positive, negative) for better similarity learning.</li>
+                <li>Can be used in a real-time verification loop with a webcam and OpenCV.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Python, TensorFlow, Keras</li>
+                <li>OpenCV for image capture and preprocessing</li>
+                <li>Numpy, Pandas for data handling</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
